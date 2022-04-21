@@ -1974,7 +1974,7 @@ contract FreakAliensClub is ERC721, Ownable {
     function mintAlien(uint numberOfTokens) public payable {
         require(saleIsActive, "Sale must be active to mint Alien");
         require(numberOfTokens <= maxFreakAliensPurchase, "Can only mint 20 tokens at a time");
-        require(totalSupply().add(numberOfTokens) <= MAX_ALIENS, "Purchase would exceed max supply of Apes");
+        require(totalSupply().add(numberOfTokens) <= MAX_ALIENS, "Purchase would exceed max supply of Aliens");
         require(alienPrice.mul(numberOfTokens) <= msg.value, "Ether value sent is not correct");
         
         for(uint i = 0; i < numberOfTokens; i++) {
