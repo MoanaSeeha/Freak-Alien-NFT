@@ -1,21 +1,44 @@
 import React from "react";
 
+export interface INavItem {
+  title: string,
+}
+
+const headerContent : INavItem[] = [
+  { title: 'about' },
+  { title: 'roadmap' },
+  { title: 'team' },
+  { title: 'provenance' },
+  { title: 'gallery' },
+  { title: 'members' }
+]
+
 const Header = () => {
   return (
-    <div>
-      <nav className="nav fixed left-0 right-0 flex flex-row pr-4 sm:px-16 items-center z-50 uppercase text-sm text-black">
-        <div className="hidden sm:inline sm:pl-32">PSSSSD Labs</div>
+    <div className="flex flex-col">
+      <div className="">
+
+      </div>
+      <nav className="w-full flex justify-evenly p-6 items-center">
+        <img src={`${process.env.PUBLIC_URL}/image/fac-logo-black.svg`} alt=""  className=" w-52 hover:opacity-50 cursor-pointer transition-all"/>
+        <ul className="flex text-base m-1">
+          { 
+            headerContent.map((header, index) => 
+              <li key={index} className=" inline-block border-b-4 border-[#fff0] hover:border-gray-400 transition-all py-4 px-6 cursor-pointer">
+                <a href={`#${header.title}`} className=" capitalize">{header.title}</a>
+              </li>
+            )
+          }
+        </ul>
+        <img src={`${process.env.PUBLIC_URL}/image/Join-Discord.png`} alt="" className=" h-10 hover:opacity-50 cursor-pointer transition-all"/>
+        {/* <div className="hidden sm:inline sm:pl-32">PSSSSD Labs</div>
         <div className="grow text-right">
           <span className="dot"></span>
           <span className="hidden md:inline">Current Status: </span>Tier 4 Emergency
         </div>
         <div className="mx-4">||||</div>
-        <a className="underline underline-offset-1" href="/connect">Connect</a>
+        <a className="underline underline-offset-1" href="/connect">Connect</a> */}
       </nav>
-      <div className="fixed left-0 z-40 overflow-x-hidden header">
-        <img src={`${process.env.PUBLIC_URL}/img/nav-QLRXPLVY.svg`} className="nav-img" alt=""/>
-      </div>
-      <img src={`${process.env.PUBLIC_URL}/img/logo-FDOECSF6.svg`} className="nav-logo fixed w-16 z-40" alt="logo"></img>
     </div>
   )
 }
