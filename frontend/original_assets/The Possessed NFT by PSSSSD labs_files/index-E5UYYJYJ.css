@@ -1,0 +1,345 @@
+.nav {
+    top: 1.5rem;
+    font-size: 1em;
+}
+
+.nav-logo {
+    top: 2rem;
+    left: 2rem;
+    animation: rotation 16s infinite linear;
+}
+
+.nav-img {
+    width: 1500px;
+    max-width: none;
+    overflow: hidden;
+}
+
+.banner {
+    width: 1250px;
+    max-width: none;
+    position: absolute;
+}
+
+.banner-pink {
+    left: -32rem;
+    top: 6rem;
+}
+
+.banner-green {
+    left: -35rem;
+    top: 20rem;
+}
+
+.banner-orange {
+    left: -25rem;
+    top: 21rem;
+}
+
+.dot {
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: #ff6464;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.75rem;
+}
+
+.hero-heading {
+    font-family: "Bureau Grot Extra";
+    font-size: 7rem;
+    text-align: center;
+    line-height: 1;
+}
+
+.hero-lottie {
+    width: 85vw;
+    height: 85vw;
+    margin: 0 auto;
+}
+
+.hero-lottie canvas {
+    border-radius: 1.5rem;
+}
+
+.super {
+    font-family: "Bureau Grot";
+    vertical-align: top;
+    top: 1.25rem;
+    font-size: 1rem;
+    line-height: 0;
+}
+
+.section-beige {
+    background-color: #efe3da;
+    color: #222123;
+}
+
+.content-box {
+    border: 1px solid #222123;
+}
+
+.section-beige h2 {
+    font-family: "Bureau Grot Extra";
+    font-size: 14rem;
+    margin-top: -3rem;
+    padding-left: 2rem;
+}
+
+.accordion__item {
+    border-top: 1px solid #222123;
+    padding: 1.5rem 2rem;
+}
+
+.accordion__button {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.accordion__button:before {
+    display: inline-block;
+    content: "";
+    height: 0.75rem;
+    width: 0.75rem;
+    margin-right: 1.5rem;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(-45deg);
+}
+
+.accordion__panel {
+    padding-left: 2.25rem;
+    margin-top: 1rem;
+    animation: fadein 0.35s ease-in;
+}
+
+.accordion__button[aria-expanded="true"]::before,
+.accordion__button[aria-selected="true"]::before {
+    transform: rotate(45deg);
+}
+
+[hidden] {
+    display: none;
+}
+
+.creator {
+    border-top: 1px solid #222123;
+    padding: 2rem;
+}
+
+.creator h3 {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.link-banner {
+    border-top: 1px solid #222123;
+    background-color: #f4bcf9;
+    color: #222123;
+}
+
+.barcode {
+    width: 9rem;
+    float: none;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    height: 1.5rem;
+    opacity: 0.5;
+}
+
+.carousel-container {
+    overflow: hidden;
+}
+
+.carousel-lottie {
+    height:33vw;
+}
+
+@media (min-width: 640px) {
+    .hero-heading {
+        font-size: 12rem;
+    }
+
+    .super {
+        top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .banner-green {
+        left: -20rem;
+        top: 25rem;
+    }
+
+    .banner-orange {
+        top: 27rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero {
+        min-height: 460px;
+    }
+
+    .hero-lottie {
+        width: 350px;
+        height: 350px;
+    }
+
+    .hero-heading {
+        font-size: 7.5rem;
+        text-align: left;
+    }
+
+    .super {
+        top: 1.4em;
+        font-size: 1rem;
+    }
+
+    .banner-green {
+        left: -18rem;
+        top: 26rem;
+    }
+
+    .banner-orange {
+        left: -11rem;
+        top: 20rem;
+    }
+
+    .banner-pink {
+        left: -11rem;
+        top: 4rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero-heading {
+        font-size: 10.5rem;
+    }
+
+    .super {
+        top: 1.75em;
+    }
+
+    .hero-lottie {
+        width: 480px;
+        height: 480px;
+    }
+
+    .creator h3 {
+        font-size: 1.25rem;
+    }
+
+    .barcode {
+        float: right;
+        margin-bottom: 0;
+    }
+
+    .banner {
+        width: 1500px;
+    }
+
+    .banner-green {
+        left: -10rem;
+        top: 32rem;
+    }
+
+    .banner-orange {
+        top: 22rem;
+    }
+
+    .banner-pink {
+        left: -14rem;
+        top: 3rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .main {
+        padding-top: 7%;
+    }
+
+    .nav {
+        top: 1.5vw;
+    }
+
+    .nav-logo {
+        left: 1.5vw;
+        top: 2vw;
+    }
+
+    .nav-img {
+        width: 100vw;
+    }
+
+    .banner {
+        width: 150%;
+    }
+
+    .banner-green {
+        left: -20%;
+        top: 24%;
+    }
+
+    .banner-orange {
+        left: -33%;
+        top: 19%;
+    }
+
+    .banner-pink {
+        left: -20%;
+        top: 0;
+    }
+
+    .hero-heading {
+        font-size: 14rem;
+    }
+
+    .super {
+        top: 2rem;
+        font-size: 1rem;
+    }
+
+    .hero-lottie {
+        width: 610px;
+        height: 610px;
+    }
+
+    .barcode {
+        width: 12rem;
+    }
+}
+
+@media (min-width: 1536px) {
+
+    .nav {
+        padding-left: 6%;
+        padding-right: 6%;
+        top: 3.25%;
+    }
+
+    .nav-logo {
+        width: 4%;
+    }
+
+    .hero {
+        max-height: 80vh;
+    }
+
+    .hero-lottie {
+        width: 75vh;
+        height: 75vh;
+        min-width: 410px;
+        min-height: 410px;
+        max-height: 700px;
+        max-width: 700px;
+    }
+
+    .banner-green, .banner-orange {
+        top: auto;
+        bottom: 1365px;
+    }
+}
