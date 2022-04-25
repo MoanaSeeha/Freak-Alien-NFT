@@ -1,11 +1,11 @@
 import React from "react";
 
-
+import Container from "./Container";
 
 const Main = () => {
   return (
-    <div className="main pt-52 md:pt-32 lg:pt-28 relative overflow-x-hidden">
-      
+    <div className="main relative overflow-x-hidden">
+      <Container/>
     </div>
   )
 }
