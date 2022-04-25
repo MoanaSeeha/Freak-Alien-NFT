@@ -31,13 +31,6 @@ const Header = () => {
           }
         </ul>
         <img src={`${process.env.PUBLIC_URL}/image/Join-Discord.png`} alt="" className=" h-10 hover:opacity-50 cursor-pointer transition-all"/>
-        {/* <div className="hidden sm:inline sm:pl-32">PSSSSD Labs</div>
-        <div className="grow text-right">
-          <span className="dot"></span>
-          <span className="hidden md:inline">Current Status: </span>Tier 4 Emergency
-        </div>
-        <div className="mx-4">||||</div>
-        <a className="underline underline-offset-1" href="/connect">Connect</a> */}
       </nav>
     </div>
   )
