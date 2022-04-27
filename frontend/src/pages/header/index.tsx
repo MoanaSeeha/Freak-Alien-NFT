@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-scroll'
 
 export interface INavItem {
   title: string,
@@ -25,9 +26,17 @@ const Header = () => {
           <ul className="flex text-base m-1">
             { 
               headerContent.map((header, index) => 
-                <li key={index} className=" inline-block border-b-4 border-[#fff0] hover:border-gray-400 transition-all py-4 px-6 cursor-pointer">
-                  <a href={`#${header.title}`} className=" capitalize">{header.title}</a>
-                </li>
+              <Link
+                activeClass="active"
+                to={header.title}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                key={index} className="capitalize inline-block border-b-4 border-[#fff0] hover:border-gray-400 transition-all py-4 px-6 cursor-pointer"
+              >
+                {header.title}
+              </Link>
               )
             }
           </ul>
