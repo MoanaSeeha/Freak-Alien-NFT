@@ -2,9 +2,9 @@ import React from "react";
 
 const Container = () => {
   return (
-    <div className="mx-auto hero pb-10 flex flex-col justify-center">
-      <img src={`${process.env.PUBLIC_URL}/image/fac-background.svg`} className=" w-full absolute"/>
-      <div className=" flex flex-col px-24 z-10 text-6xl font-extrabold">
+    <div id="" className="mx-auto flex flex-col justify-center">
+      <img src={`${process.env.PUBLIC_URL}/image/fac-background.svg`} className=" w-full top-0"/>
+      <div className=" absolute flex flex-col px-24 z-10 text-6xl font-extrabold justify-center">
         <div className=" p-4 bg-blue-700 text-2xl font-bold inline-block w-fit my-8">
           WELCOME TO
         </div>
